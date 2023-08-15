@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="text/html;charset=UTF-8;ie=edge"
+    />
+    <title>Super Mario Bros Demo</title>
+    <link
+      rel="shorcut icon"
+      href="images/character/mario-idle-right.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="pixi/pixi.min.js"></script>
+  </head>
+  <body>
+    <script>
+      let app = new PIXI.Application({
+        width: 960,
+        height: 800,
+        backgroundColor: 0x6185f8,
+      });
+      document.body.appendChild(app.view);
+      PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
+    </script>
+
+    <script src="Worldmap.js"></script>
+    <script src="GameObject.js"></script>
+    <script src="Hero.js"></script>
+
+    <p id="coin" class="coin-count">Coin: 0</p>
+  </body>
+</html>
